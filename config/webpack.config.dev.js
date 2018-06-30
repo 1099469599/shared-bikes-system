@@ -144,7 +144,13 @@ module.exports = {
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             options: {
-              
+              /**************************************************************************************
+               * 安装 babel-plugin-import，并在 Webpack 中做此配置，实现 antd 组件的 js 和 css 按需加载，
+               * 注意：这个配置目前只在 2.7.3 ≤ version ﹤3.0.0 的 less 版本中生效！
+               **************************************************************************************/
+              plugins: [
+                ['import', [{ libraryName: 'andt', style: true }]]
+              ],
               // This is a feature of `babel-loader` for webpack (not Babel itself).
               // It enables caching results in ./node_modules/.cache/babel-loader/
               // directory for faster rebuilds.
