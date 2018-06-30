@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { Button } from 'antd';
+
+import 'antd/dist/antd.css'
 import './App.less';
+
 
 class App extends Component {
   render() {
@@ -11,8 +15,8 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-          <p className="test-less">在项目中暴露 (eject) Webpack 文件，并在项目中配置 less 的使用。</p>
+          <p>To get started, edit <code>src/App.js</code> and save to reload.</p>
+          <Button>AntD-Button</Button>
         </p>
       </div>
     );
