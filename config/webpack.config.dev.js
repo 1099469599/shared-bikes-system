@@ -149,7 +149,7 @@ module.exports = {
                * 注意：这个配置目前只在 2.7.3 ≤ version ﹤3.0.0 的 less 版本中生效！
                **************************************************************************************/
               plugins: [
-                ['import', [{ libraryName: 'andt', style: true }]]
+                ['import', [{ libraryName: 'antd', style: true }]]
               ],
               // This is a feature of `babel-loader` for webpack (not Babel itself).
               // It enables caching results in ./node_modules/.cache/babel-loader/
